@@ -52,7 +52,7 @@ class TextGenerator{
 }
 
 class Input{
-    +Direction
+    +Direction direction
 }
 
 ```

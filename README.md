@@ -6,3 +6,11 @@
 - [Concept](docs/concept.md)
 - [Architecture](docs/architecture.md)
 - [Prerequisites](docs/prerequisites.md)
+
+## Startup
+
+```
+cd .\WordisApp\
+yarn install
+yarn start
+```
