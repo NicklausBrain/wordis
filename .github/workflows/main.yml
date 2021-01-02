@@ -9,7 +9,7 @@ on: [push]
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: Test
+    name: CI-Build-Test-Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,4 +20,6 @@ jobs:
       - run: yarn install
         working-directory: WordisApp
       - run: yarn test --watchAll=false --updateSnapshot
+        working-directory: WordisApp
+      - run: yarn eslint . --ext '.js,.jsx,.ts,.tsx'
         working-directory: WordisApp
