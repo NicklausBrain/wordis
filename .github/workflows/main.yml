@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI-Test
+
+# Controls when the action will run. 
+on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn install
+        working-directory: WordisApp
+      - run: yarn test --watchAll=false --updateSnapshot
+        working-directory: WordisApp
