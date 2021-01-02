@@ -19,5 +19,5 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install
         working-directory: WordisApp
-      - run: yarn test
+      - run: yarn test --watchAll=false
         working-directory: WordisApp
