@@ -9,7 +9,7 @@ on: [push]
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: Test
+    name: CI-Build-Test-Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
