@@ -21,3 +21,5 @@ jobs:
         working-directory: WordisApp
       - run: yarn test --watchAll=false --updateSnapshot
         working-directory: WordisApp
+      - run: yarn eslint . --ext '.js,.jsx,.ts,.tsx'
+        working-directory: WordisApp
