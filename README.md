@@ -4,6 +4,7 @@
 
 ## Documentation contents
 - [Concept](docs/concept.md)
+- [Algorithm](docs/algorithm.md)
 - [Architecture](docs/architecture.md)
 - [Prerequisites](docs/prerequisites.md)
 
